@@ -73,7 +73,7 @@ header {
 
 @media screen and (max-width: 768px){
     #destacados{
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(1, auto);
     }
 
     header {
