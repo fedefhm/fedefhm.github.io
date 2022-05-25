@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Open+Sans:wdth,wght@93,300;100,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Mundo de luz/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/632d8e7dbe.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body class="contact">
+    <header>
+
+        <nav class="header-menubar"> <!--barra de navegacion-->
+            <img src="logomdl2.png" class="logo nav-link" alt="Mundo de luz"> 
+            
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="productos.html" class="nav-menu-link nav-link">Productos</a></li>
+                <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+                <li class="nav-menu-item"><a href="puntoentrega.html" class="nav-menu-link nav-link">Punto de retiro</a></li>
+            
+
+            </ul>
+
+
+        </nav>
+
+
+    </header>
+    
+
+
+    <div><img class="formulario_contacto" src="compu.png"  alt="computadora"></div>
+    <form class="formulario" action="link" method="POST" target="_blank">
+
+        <label for="firstname">Nombre: </label> <input size="50" type="text" name="firstname" 
+        placeholder="Ingrese su nombre"> <br> <br>
+        
+        <label for="correo">E-mail: &nbsp; </label> <input size="50" id="campoEmail" type="email" name="correo" 
+        placeholder="Ingrese su e-mail"> <br> <br>
+               
+        <label for="consulta"></label> 
+        <textarea name="mensaje" cols="40" rows="10" placeholder="Escriba su consulta aquí"></textarea>
+        
+        <br>              
+        <br>
+            <input type="submit" value="ENVIAR" onclick="return validarEmail()">
+        </form>
+
+        <footer>
+            <p class="parrafo-footer">Seguinos en nuestras redes sociales:</p>
+            <ul class="footer-menu">
+                
+                <li class="footer-menu-item">
+                    <i class="fa-brands fa-instagram-square"></i> <a href="#" class="redes sociales footer">@mundodeluz</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa-brands fa-facebook"></i> <a href="#" class="redes sociales footer">Mundo de luz</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa-brands fa-youtube"></i> <a href="#" class="redes sociales footer">Mundo de luz</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    
+                </li>
+                
+    
+            </ul>
+            <br>
+            <i class="fa-regular fa-copyright"></i> Copyright 2022. All rights reserved.
+        </footer>
+
+
+</body>
+
+<script>
+    function validarEmail() {
+        var email = document.getElementById("campoEmail").value;
+        var regExp = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+
+  if (regExp.test(email)){
+   alert("La dirección de email " + email + " es correcta.");
+  } else {
+   alert("La dirección de email es incorrecta.");
+   
+  }
+
+  return false;
+}
+</script>
+
+</html>
+

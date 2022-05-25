@@ -1,0 +1,167 @@
+header { 
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 18%, rgba(255,87,51,1) 27%, rgba(245,52,52,1) 100%);
+    text-align: left;
+    padding-left: 25px;
+}
+
+.logo {
+    width: 200px;
+    
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.animate__animated {
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    
+}
+
+.nav-menu, .nav-avisos {
+    background-color: black;
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li, .nav-avisos li {
+    padding: 10px 0;
+    flex-direction: row;
+    flex:auto;
+    text-align: center;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-avisos {
+    background-color: lightgray;
+}
+
+#quienes-somos {
+    text-align: center;
+    padding: 30px 25%;
+    color: #FF5733;
+}
+
+#destacados{
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 50px;
+}
+
+#destacados .fanal {
+    height: 400px;
+    width: 500 px;
+}
+
+#destacados img{
+    width: 100%;
+    transition: .2s;
+}
+
+#destacados div img:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px){
+    #destacados{
+        grid-template-columns: repeat(2, auto);
+    }
+
+    header {
+
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(255,87,51,1) 38%);
+    }
+
+    #quienes-somos {
+        padding: 30px 10%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #destacados{
+        grid-template-columns: repeat(1, auto);
+        
+    }
+
+    body{
+        background-color: #FF5733;
+    }
+
+    #quienes-somos {
+        color: black;
+    }
+    header{
+        background: black;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px ;
+    padding-bottom: 20px;
+}
+
+.parrafo-footer {
+    font-size: 18px;
+}
+
+ul, .footer-menu{
+   text-decoration: none;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: white;
+    display:inline-flex;
+    
+}
+
+.puntoentrega {
+
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.productos_construccion{
+
+    text-align: center;
+}
+
+.formulario_contacto{
+    height: 25%;
+    width: 25%;
+    margin-left: 37% ;
+    margin-right: 37%;
+
+}
+
+form, label{
+    text-align: center;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.contact{
+    background-color:antiquewhite;
+    
+}
